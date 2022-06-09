@@ -69,6 +69,7 @@ export default function Home() {
       await tx.wait();
       window.alert("added to white list");
       getNoOfwhitelisted();
+      getWhitelistStatus();
     } catch (err) {
       console.log(err);
     }
@@ -87,7 +88,7 @@ export default function Home() {
         getNoOfwhitelisted();
       }, 5000);
     }
-  }, []);
+  }, [walletconnected]);
 
   const render = () => {
     if (!walletconnected) {
