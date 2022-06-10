@@ -121,7 +121,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#000] md:h-screen flex flex-col-reverse md:flex-row">
+    <div className="bg-[#000] h-screen flex flex-col-reverse md:flex-row">
       <Head>
         <title>Whitelist Dapp</title>
         <meta
