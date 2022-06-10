@@ -121,7 +121,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#000] h-screen flex">
+    <div className="bg-[#000] md:h-screen flex flex-col-reverse md:flex-row">
       <Head>
         <title>Whitelist Dapp</title>
         <meta
@@ -129,7 +129,7 @@ export default function Home() {
           content="whitelist for crypto rain nft collection"
         />
       </Head>
-      <div className="my-40 mx-20 text-white">
+      <div className="md:my-40 md:mx-20 mx-auto my-10 text-white">
         <p className="font-serif lg:text-4xl font-light text-3xl mb-6 ">
           Welcome to Crypto Rain
         </p>
@@ -141,7 +141,7 @@ export default function Home() {
         {render()}
       </div>
 
-      <div className="ml-10 mt-[100px]">
+      <div className="md:ml-10 mx-auto md:mt-[100px]">
         <Image src="/home.png" alt="home image" width={666} height={394} />
       </div>
     </div>
